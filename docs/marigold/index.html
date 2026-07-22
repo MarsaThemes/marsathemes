@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marigold Theme Documentation — Marsa Themes</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Josefin Sans', 'Segoe UI', system-ui, sans-serif; background: #FFFDF5; color: #2B2B3D; line-height: 1.7; }
+    a { color: #F5A623; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .header { border-bottom: 1px solid #F0E6D2; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; max-width: 72rem; margin: 0 auto; }
+    .logo { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.04em; color: #2B2B3D; }
+    .nav { display: flex; gap: 2rem; }
+    .nav a { color: #888; font-size: 0.875rem; letter-spacing: 0.04em; text-transform: uppercase; }
+    .nav a:hover { color: #2B2B3D; text-decoration: none; }
+
+    .docs { max-width: 48rem; margin: 0 auto; padding: 3rem 2rem; }
+    .docs h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .docs .subtitle { color: #888; font-size: 1rem; margin-bottom: 2rem; }
+    .btn { display: inline-block; margin-bottom: 2rem; padding: 0.875rem 2rem; background: #F5A623; color: #2B2B3D; font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.06em; text-decoration: none; border-radius: 8px; }
+    .btn:hover { background: #e6951a; text-decoration: none; }
+    .docs h2 { font-size: 1.375rem; margin-top: 3rem; margin-bottom: 1rem; padding-top: 2rem; border-top: 1px solid #F0E6D2; }
+    .docs h3 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #F5A623; }
+    .docs p, .docs li { color: #4A4A5A; font-size: 0.9375rem; margin-bottom: 0.75rem; }
+    .docs ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    .docs li { margin-bottom: 0.375rem; }
+    .docs code { background: #FFF5E1; padding: 0.125rem 0.375rem; font-size: 0.875rem; border: 1px solid #F0E6D2; border-radius: 4px; }
+
+    .toc { background: #FFF5E1; border: 1px solid #F0E6D2; padding: 1.5rem 2rem; margin-bottom: 3rem; border-radius: 12px; }
+    .toc h4 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #888; margin-bottom: 0.75rem; }
+    .toc ul { list-style: none; padding: 0; }
+    .toc li { margin-bottom: 0.375rem; }
+    .toc a { color: #4A4A5A; font-size: 0.875rem; }
+
+    .footer { border-top: 1px solid #F0E6D2; padding: 2rem; text-align: center; color: #888; font-size: 0.8125rem; margin-top: 4rem; }
+
+    @media (max-width: 640px) {
+      .docs h1 { font-size: 1.5rem; }
+      .nav { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="/marsathemes/" class="logo">Marsa Themes</a>
+    <nav class="nav">
+      <a href="/marsathemes/">Home</a>
+      <a href="/marsathemes/docs/marigold/">Docs</a>
+      <a href="/marsathemes/support/">Support</a>
+    </nav>
+  </header>
+
+  <main class="docs">
+    <h1>Marigold Theme Documentation</h1>
+    <p class="subtitle">Version 1.0.0 — A bright, joyful theme for baby & kids brands</p>
+    <a href="#" class="btn">Buy on Shopify — $220</a>
+
+    <div class="toc">
+      <h4>Contents</h4>
+      <ul>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#theme-settings">Theme Settings</a></li>
+        <li><a href="#sections">Sections</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#rtl">RTL Support</a></li>
+        <li><a href="#performance">Performance</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <h2 id="getting-started">Getting Started</h2>
+    <p>After installing Marigold from the Shopify Theme Store, go to <strong>Online Store &gt; Customize</strong> to start configuring your store.</p>
+    <p>Marigold ships with a bright, sunny palette — warm white backgrounds, golden accents, and bold uppercase headings. All colors, fonts, spacing, and layout options are fully customizable through the theme editor — no code required.</p>
+
+    <h3>First Steps</h3>
+    <ul>
+      <li>Upload your logo in <strong>Header &gt; Logo image</strong></li>
+      <li>Set up your navigation menu in <strong>Header &gt; Menu</strong></li>
+      <li>Add a hero image to your homepage hero section</li>
+      <li>Select a featured collection to display on the homepage</li>
+      <li>Configure the announcement bar with your shipping offer</li>
+      <li>Set up footer blocks (link columns + newsletter signup)</li>
+    </ul>
+
+    <h2 id="theme-settings">Theme Settings</h2>
+    <p>Access global theme settings via <strong>Customize &gt; Theme settings</strong> (gear icon).</p>
+
+    <h3>Colors</h3>
+    <p>Marigold includes 7 customizable color tokens:</p>
+    <ul>
+      <li><strong>Background</strong> — Main page background (default: <code>#FFFDF5</code> sunny white)</li>
+      <li><strong>Foreground</strong> — Body text color (default: <code>#2B2B3D</code> soft black)</li>
+      <li><strong>Accent</strong> — Buttons, links, highlights (default: <code>#F5A623</code> golden marigold)</li>
+      <li><strong>Border</strong> — Dividers and outlines (default: <code>#F0E6D2</code> warm bisque)</li>
+      <li><strong>Surface</strong> — Card and input backgrounds (default: <code>#FFF5E1</code> light honey)</li>
+      <li><strong>Sale</strong> — Sale price color (default: <code>#C75D5D</code>)</li>
+      <li><strong>Sold out</strong> — Sold out badge color (default: <code>#666666</code>)</li>
+    </ul>
+
+    <h3>Typography</h3>
+    <p>Choose any two fonts from the Shopify font library. Marigold defaults to:</p>
+    <ul>
+      <li><strong>Headings:</strong> Josefin Sans (geometric sans-serif)</li>
+      <li><strong>Body:</strong> Work Sans (clean sans-serif)</li>
+    </ul>
+    <p>The type scale uses fluid sizing with <code>clamp()</code> — text scales smoothly between mobile and desktop without breakpoints.</p>
+
+    <h3>Layout</h3>
+    <ul>
+      <li><strong>Max page width</strong> — Controls the maximum content width (default: 90rem)</li>
+      <li><strong>Page margin</strong> — Minimum side padding (default: 24px)</li>
+      <li><strong>Input corner radius</strong> — Rounds form inputs (default: 8px)</li>
+      <li><strong>Button corner radius</strong> — Rounds buttons (default: 12px)</li>
+    </ul>
+
+    <h2 id="sections">Sections</h2>
+    <p>Marigold includes 22+ sections. All sections use the theme editor for configuration — no code editing needed.</p>
+
+    <h3>Homepage Sections</h3>
+    <ul>
+      <li><strong>Announcement bar</strong> — Dismissible top bar with custom colors. Great for shipping offers or promotions. Stays dismissed per session.</li>
+      <li><strong>Hero</strong> — Full-width banner with image, overlay, heading, subheading, and up to 2 CTA buttons. Bold uppercase styling.</li>
+      <li><strong>Featured collection</strong> — Product grid with playful card hover effects (lift + scale), golden shadows, and product badges.</li>
+      <li><strong>Image with text</strong> — Two-column layout with image and rich text. Image position flips left/right.</li>
+      <li><strong>Rich text</strong> — Centered text block with heading, body, and optional CTA button.</li>
+      <li><strong>Video</strong> — YouTube or Vimeo embed with optional cover image and play button.</li>
+      <li><strong>Testimonials</strong> — Quote cards in a responsive grid. Up to 6 testimonials.</li>
+      <li><strong>Multi-column</strong> — Image + text columns for features or info blocks. Up to 6 columns.</li>
+      <li><strong>Collapsible content</strong> — FAQ accordion using native &lt;details&gt; elements. No JavaScript. Up to 12 rows.</li>
+      <li><strong>Logo list</strong> — Partner/press logos in a row. Grayscale with color on hover. Up to 8 logos.</li>
+    </ul>
+
+    <h3>Template Sections</h3>
+    <ul>
+      <li><strong>Product</strong> — Two-column layout with image gallery and sticky product info. Variant swatches, quantity selector, dynamic checkout button, image zoom on hover. Supports Shopify-hosted and YouTube/Vimeo product videos. Stock counter shows "Only X left" when inventory is low. Sticky Add to Cart on mobile.</li>
+      <li><strong>Collection</strong> — Product card grid with sort dropdown, storefront filters, pagination, and quick buy buttons on hover.</li>
+      <li><strong>Cart drawer</strong> — Slide-out AJAX cart with quantity updates, order notes, no page reload.</li>
+      <li><strong>Blog</strong> — Article cards with image, title, date, and excerpt.</li>
+      <li><strong>Article</strong> — Full article with featured image, author, date, and rich text content.</li>
+      <li><strong>Search</strong> — Search form with product result grid and pagination.</li>
+      <li><strong>Password</strong> — Pre-launch page with shop branding, newsletter signup, and collapsible password entry.</li>
+      <li><strong>Recommended products</strong> — "You may also like" section using Shopify's product recommendations API.</li>
+      <li><strong>Contact form</strong> — Built-in contact form section.</li>
+      <li><strong>Custom liquid</strong> — Inject custom Liquid code anywhere on the page.</li>
+    </ul>
+
+    <h3>Global Components</h3>
+    <ul>
+      <li><strong>Sticky header</strong> — Frosted glass blur effect, stays visible on scroll.</li>
+      <li><strong>Breadcrumbs</strong> — Automatic breadcrumb navigation on all pages except homepage.</li>
+      <li><strong>Back-to-top button</strong> — Appears on scroll, smooth scroll to top.</li>
+      <li><strong>Newsletter popup</strong> — Email capture popup with configurable delay.</li>
+      <li><strong>Product badges</strong> — Automatic Sale and Sold Out badges on product cards.</li>
+      <li><strong>Image rollover</strong> — Second product image reveals on hover in collection grids.</li>
+      <li><strong>Quick buy</strong> — Add to cart directly from collection pages for single-variant products.</li>
+      <li><strong>Stock counter</strong> — "Only X left in stock" when inventory is low.</li>
+      <li><strong>Sticky Add to Cart</strong> — Buy button sticks to bottom on mobile screens.</li>
+    </ul>
+
+    <h2 id="typography">Typography</h2>
+    <p>Marigold uses a fluid type scale based on CSS <code>clamp()</code>. Sizes adjust automatically between mobile and desktop:</p>
+    <ul>
+      <li><code>text-xs</code> — Small labels, captions</li>
+      <li><code>text-sm</code> — Secondary text, nav links</li>
+      <li><code>text-base</code> — Body text</li>
+      <li><code>text-lg</code> — Lead text, subtitles</li>
+      <li><code>text-xl</code> to <code>text-4xl</code> — Headings</li>
+    </ul>
+    <p>Marigold uses bold uppercase headings with wide letter-spacing for an energetic, confident feel.</p>
+
+    <h2 id="colors">Colors</h2>
+    <p>Marigold ships with a sunny, optimistic palette — warm whites, golden accents, and honey-toned surfaces. Every color is customizable through theme settings.</p>
+    <p>Tip: For a softer look, try swapping the accent to <code>#E05D6F</code> (playful rose) for a warmer, more feminine feel.</p>
+
+    <h2 id="rtl">RTL Support</h2>
+    <p>Marigold fully supports right-to-left languages (Arabic, Hebrew, etc.). All layouts use CSS logical properties (<code>margin-inline</code>, <code>padding-block</code>, etc.) so the entire theme mirrors automatically when a RTL locale is selected.</p>
+    <p>No additional configuration is needed — Shopify handles the <code>dir</code> attribute automatically based on the selected language.</p>
+
+    <h2 id="performance">Performance</h2>
+    <p>Marigold is built for speed:</p>
+    <ul>
+      <li>No third-party JavaScript dependencies</li>
+      <li>Critical CSS loaded with <code>preload</code></li>
+      <li>Lazy loading on all below-fold images</li>
+      <li>Fluid typography — no JavaScript resize handlers</li>
+      <li>Minimal DOM — no wrapper-heavy markup</li>
+      <li>CSS-only animations for card hovers and transitions</li>
+    </ul>
+
+    <h2 id="faq">FAQ</h2>
+
+    <h3>Is Marigold only for baby stores?</h3>
+    <p>No. Marigold is designed with baby and kids brands in mind, but its bright, joyful aesthetic works for any store that wants an energetic, optimistic feel — party supplies, craft kits, educational products, and more.</p>
+
+    <h3>Can I tone down the brightness?</h3>
+    <p>Yes. Every color is customizable. Swap the accent to a muted tone, reduce the background warmth, or even go dark — all components use CSS custom properties, so changes propagate instantly.</p>
+
+    <h3>Does Marigold work with Shopify Markets?</h3>
+    <p>Yes. All prices use the <code>| money</code> filter and all text uses translation keys, so multi-currency and multi-language setups work out of the box.</p>
+
+    <h3>Is Marigold based on Dawn?</h3>
+    <p>No. Marigold is built on the Skeleton base theme — original code, no Dawn dependencies, and full eligibility for the Shopify Theme Store.</p>
+
+    <h3>How do I get support?</h3>
+    <p>Visit our <a href="/marsathemes/support/">support page</a> to get in touch. We respond within 24 hours on business days.</p>
+  </main>
+
+  <footer class="footer">
+    &copy; 2026 Marsa Themes. All rights reserved.
+  </footer>
+</body>
+</html>
